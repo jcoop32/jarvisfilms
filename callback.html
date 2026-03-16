@@ -1,0 +1,10 @@
+<html>
+<body>
+<h1>TikTok Auth Code</h1>
+<p id="code"></p>
+<script>
+  const code = new URLSearchParams(window.location.search).get('code');
+  document.getElementById('code').textContent = code || 'No code found';
+</script>
+</body>
+</html>
